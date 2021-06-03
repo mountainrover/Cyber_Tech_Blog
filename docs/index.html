@@ -10,14 +10,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!--<style type="text/css">
-    div.overflow {
-
-                background-color: green;
-                overflow: auto;
-                text-align:justify;
-            }
-  </style> -->
+ <style type="text/css">
+#nav ul {
+position:absolute;
+padding:0;
+left:0;
+display:none; /* hides sublists */
+}
+#nav li:hover ul ul {display:none;} /* hides sub-sublists */
+#nav li:hover ul {display:block;} /* shows sublist on hover */
+#nav li li:hover ul {
+display:block; /* shows sub-sublist on hover */
+margin-left:200px; /* this should be the same width as the parent list item */
+margin-top:-35px; /* aligns top of sub menu with top of list item */
+}
+  </style> 
 
 </head>
 <body>
